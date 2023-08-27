@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #002339;
+    color: white;
+}
+
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+
+.display{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: white;
+    color: #f0ec29;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span{
+    color: #1dff2c;
+    border-bottom: 4px solid #3add60;
+}
+
+.display img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+
+.container button img{
+    width: 28px;
+    margin-right: 10px;
+}
+
+.container button{
+    border: 0;
+    outline: 0;
+    background: #28ce36;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* responsive */
+@media screen and (width < 910px){
+    body{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 140px;
+    }
+    .display{
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+    .display input{
+        width: 200px;
+    }
+}
+@media screen and (width < 534px){
+    .display{
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+    .display input{
+        width: 200px;
+        font-size: 17px;
+    }
+    .display img{
+        width: 19px;
+        font-size: 17px;
+    }
+    .container button{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container button img{
+        width: 19px;
+    }
+
+    .container h1{
+        font-size: 25px;
+    }
+}
